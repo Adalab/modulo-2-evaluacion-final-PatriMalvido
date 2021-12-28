@@ -13,7 +13,7 @@ function fetchItems() {
     .then((response) => response.json())
     .then((dataFromApi) => {
       data = dataFromApi.results;
-      console.log(data);
+    
       renderAllItems();
     });
 }
@@ -27,15 +27,14 @@ function renderAllItems() {
 function renderItem(data) {
   animeList.innerHTML += `
 <article class="movie">
-    <img class="" src="${data.image_url}" alt="">
-    <h3 class="card_title">${data.title}</h3>
+    <img class="" src="${data.image_url}" alt="" placeholder="">
+    <h3 class="card__title">${data.title}</h3>
 </article>`;
 }
 
 function handleShowTitle(event) {
-    event.preventDefault();
-    fetchItems();
-
+  event.preventDefault();
+  fetchItems();
 }
 
 buttonSearch.addEventListener("click", handleShowTitle);

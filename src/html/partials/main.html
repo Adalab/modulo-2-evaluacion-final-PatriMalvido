@@ -1,4 +1,5 @@
-<h1 class="title">Buscador de Series de Anime</h1>
+<main class="page__main">
+
 <form>
     <input class="js-search_input_title" type="text" name="search" id="search" placeholder="Escribe aqui...">
     <button class="js-button_search" type="submit" id="search_button">Buscar</button>
@@ -6,10 +7,18 @@
 </form>
 
 <section class="cards_movie js-anime_list">
-    <!--
+    <!-- ES PARA BORRAR, lo he parametrizado
     <article class="movie">
         <img class="" src="" alt="">
         <h3 class="card_title">titulo del anime</h3>
-    </article>
+    </article>-->
 </section>
--->
+<div class="container">
+    <section class="fav__section">
+        <h2 class="fav__section-title">Mis series favoritas</h2>
+        <ul class="main__list-favorite"></ul>
+        <input type="button" value="Reset" class="fav__section-reset">
+    </section>
+    <ul class="main__list js-main_list"></ul>
+</div>
+</main>
