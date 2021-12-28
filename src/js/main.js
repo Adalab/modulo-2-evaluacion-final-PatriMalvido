@@ -1,10 +1,12 @@
-"use strict";
+'use strict';
 
-console.log(">> Ready :)");
+console.log('>> Ready :)');
 
-const animeList = document.querySelector(".js-anime_list");
-const searchInputTitle = document.querySelector(".js-search_input_title");
-const buttonSearch = document.querySelector(".js-button_search");
+const animeList = document.querySelector('.js-anime_list');
+const searchInputTitle = document.querySelector('.js-search_input_title');
+const buttonSearch = document.querySelector('.js-button_search');
+const defaultImage =
+  'https://via.placeholder.com/210x295/ffffff/666666/?text=TV';
 
 let data = [];
 
@@ -13,23 +15,31 @@ function fetchItems() {
     .then((response) => response.json())
     .then((dataFromApi) => {
       data = dataFromApi.results;
-    
+      console.log(defaultImage);
       renderAllItems();
     });
 }
 function renderAllItems() {
-  animeList.innerHTML = "";
+  animeList.innerHTML = '';
   for (const eachAnime of data) {
     renderItem(eachAnime);
   }
 }
 
 function renderItem(data) {
-  animeList.innerHTML += `
-<article class="movie">
-    <img class="" src="${data.image_url}" alt="" placeholder="">
-    <h3 class="card__title">${data.title}</h3>
-</article>`;
+  if (data.image_url === null) {
+    animeList.innerHTML += `
+        <article class="movie">
+            <img class="" src="${defaultImage}" alt="" placeholder="">
+            <h3 class="card__title">${data.title}</h3>
+        </article>`;
+  } else {
+    animeList.innerHTML += `
+        <article class="movie">
+        <img class="" src="${data.image_url}" alt="" placeholder="">
+        <h3 class="card__title">${data.title}</h3>
+    </article> `;
+  }
 }
 
 function handleShowTitle(event) {
@@ -37,4 +47,4 @@ function handleShowTitle(event) {
   fetchItems();
 }
 
-buttonSearch.addEventListener("click", handleShowTitle);
+buttonSearch.addEventListener('click', handleShowTitle);
