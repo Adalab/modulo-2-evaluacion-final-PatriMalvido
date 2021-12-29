@@ -2,23 +2,22 @@
 
 <form>
     <input class="js-search_input_title" type="text" name="search" id="search" placeholder="Escribe aqui...">
-    <button class="js-button_search" type="submit" id="search_button">Buscar</button>
-    <button type="submit" id="reset_button">Reset</button>
+    <button class="search__button js-button_search" type="submit" id="search_button">Buscar</button>
+    <button type="submit" id="reset_button" class="section__reset">Reset</button>
 </form>
 
-<section class="cards_movie js-anime_list">
+<section class="cards_anime js-anime_list">
     <!-- ES PARA BORRAR, lo he parametrizado
-    <article class="movie">
+    <article class="anime">
         <img class="" src="" alt="">
         <h3 class="card_title">titulo del anime</h3>
     </article>-->
 </section>
-<div class="container">
-    <section class="fav__section">
-        <h2 class="fav__section-title">Mis series favoritas</h2>
-        <ul class="main__list-favorite"></ul>
-        <input type="button" value="Reset" class="fav__section-reset">
+
+    <section class="fav__section ">
+        <h3 class="fav__section-title">Mis series favoritas</h3>
+        <ul class="main__list-favorite js-anime_list_fav"> </ul>
+        <button type="submit" id="reset_fav_button" class="fav__section-reset">
     </section>
     <ul class="main__list js-main_list"></ul>
-</div>
 </main>
