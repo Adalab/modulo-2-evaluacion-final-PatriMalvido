@@ -1,23 +1,26 @@
 <main class="page__main">
 
-<form>
-    <input class="js-search_input_title" type="text" name="search" id="search" placeholder="Escribe aqui...">
-    <button class="search__button js-button_search" type="submit" id="search_button">Buscar</button>
-    <button type="submit" id="reset_button" class="section__reset">Reset</button>
-</form>
-
-<section class="cards_anime js-anime_list">
-    <!-- ES PARA BORRAR, lo he parametrizado
+    <form class='form'>
+        <input class="form__input js-search_input_title" type="text" name="search" id="search" placeholder="Escribe aqui...">
+        <input class='search__button js-button_search' type="button" value='Buscar'>
+        <input type="button" value='Reset' class="section__reset">
+    
+    </form>
+<div class='container_cards'>
+    <section class="cards_anime js-anime_list">
+        <!-- ES PARA BORRAR, lo he parametrizado
     <article class="anime">
-        <img class="" src="" alt="">
+        <img class="js-image" src="" alt="">
         <h3 class="card_title">titulo del anime</h3>
     </article>-->
-</section>
-
-    <section class="fav__section ">
-        <h3 class="fav__section-title">Mis series favoritas</h3>
-        <ul class="main__list-favorite js-anime_list_fav"> </ul>
-        <button type="submit" id="reset_fav_button" class="fav__section-reset">
     </section>
-    <ul class="main__list js-main_list"></ul>
+</div>
+    <div class='container'>
+        <section class="fav__section ">
+            <h3 class="fav__section-title">Mis series favoritas</h3>
+            <ul class="main__list-favorite js-anime_list_fav"> </ul>
+            <input type="button" value='Reset' class='fav__section-reset'>
+        </section>
+        <ul class="main__list js-main_list"></ul>
+    </div>
 </main>
