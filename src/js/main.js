@@ -5,12 +5,12 @@ const animeListFav = document.querySelector('.js-anime_list_fav');
 const animeList = document.querySelector('.js-anime_list');
 const searchInputTitle = document.querySelector('.js-search_input_title');
 const buttonSearch = document.querySelector('.js-button_search');
-const defaultImage =
-  'https://via.placeholder.com/210x295/ffffff/666666/?text=TV';
+const defaultImage ='https://via.placeholder.com/210x295/ffffff/666666/?text=TV';
 
 let data = [];
 let dataFav = [];
-//--------------------------BUSQUEDA-------------------------------------------
+
+
 function fetchItems() {
   fetch(`https://api.jikan.moe/v3/search/anime?q=${searchInputTitle.value}`)
     .then((response) => response.json())
@@ -20,12 +20,13 @@ function fetchItems() {
       renderAllItems();
     });
 }
+
+
 function renderAllItems() {
   animeList.innerHTML = '';
   for (const eachAnime of data) {
     renderItem(eachAnime);
   }
-
   const animeArticles = document.querySelectorAll('.js-article');
 
   for (const eachAnimeArticle of animeArticles) {
@@ -33,11 +34,13 @@ function renderAllItems() {
   }
 }
 
+
 function handleAnimeFav(event) {
   dataFav.push(event.currentTarget.dataset);
 
   renderAllItemsFav();
 }
+
 
 function renderAllItemsFav() {
   animeListFav.innerHTML = '';
@@ -47,11 +50,11 @@ function renderAllItemsFav() {
   }
 }
 
+
 function renderItemFav(dataFav) {
   const li = document.createElement('li');
   li.classList.add('favItem');
-  li.innerHTML = `<img class="" src="${dataFav.imageUrl}" alt="" placeholder="">
-<h3 class="card__title">${dataFav.title}</h3>`;
+  li.innerHTML = `<img class="" src="${dataFav.imageUrl}" alt="" placeholder=""><h3 class="card__title">${dataFav.title}</h3>`;
   animeListFav.appendChild(li);
 }
 
@@ -67,7 +70,6 @@ function renderItem(data) {
   article.classList.add('js-article');
   article.dataset.title = data.title;
   article.dataset.imageUrl = imageUrl;
-
   article.innerHTML = `<img class="" src="${imageUrl}" alt="" placeholder="">
   <h3 class="card__title">${data.title}</h3>`;
 
@@ -81,4 +83,4 @@ function handleShowTitle(event) {
 
 buttonSearch.addEventListener('click', handleShowTitle);
 
-//----------------------FAVORITOS----------------------//
+
