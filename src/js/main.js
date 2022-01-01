@@ -5,6 +5,7 @@ const animeListFav = document.querySelector('.js-anime_list_fav');
 const animeList = document.querySelector('.js-anime_list');
 const searchInputTitle = document.querySelector('.js-search_input_title');
 const buttonSearch = document.querySelector('.js-button_search');
+const buttonReset = document.querySelector ('.js-button_reset');
 const defaultImage ='https://via.placeholder.com/210x295/ffffff/666666/?text=TV';
 
 let data = [];
@@ -81,6 +82,10 @@ function handleShowTitle(event) {
   fetchItems();
 }
 
-buttonSearch.addEventListener('click', handleShowTitle);
+function handleClickReset(){
+  location.reload();
+}
 
+buttonSearch.addEventListener('click', handleShowTitle);
+buttonReset.addEventListener ('click', handleClickReset);
 
