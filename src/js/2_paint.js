@@ -37,12 +37,12 @@ function renderAllItems() {
     }
   
     const article = document.createElement('article');
-    article.classList.add('anime');
+    article.classList.add('js-anime');
     article.classList.add('js-article');
     article.dataset.title = data.title;
     article.dataset.imageUrl = imageUrl;
-    article.innerHTML = `<img class="" src="${imageUrl}" alt="" placeholder="">
-    <h3 class="card__title">${data.title}</h3>`;
+    article.innerHTML = `<img class="js-image" src="${imageUrl}" alt="" placeholder="">
+    <h3 class="js-card__title">${data.title}</h3>`;
   
   
     const isFav = dataFav.find(
