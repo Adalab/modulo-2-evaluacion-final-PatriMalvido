@@ -1,12 +1,10 @@
 .page__footer{
-    position: fixed;
-    width: 100%;
-    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     background-color: white;
-    box-sizing: content-box;
 }
 .footer__copy {
-    position: relative;
-    top: 10px;
-    padding-left: 30px;
+  font-weight: bold;
 }

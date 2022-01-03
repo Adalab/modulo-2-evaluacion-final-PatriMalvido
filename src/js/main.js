@@ -1,6 +1,7 @@
 'use strict';
 //variables globales-----------------------------------
 console.log('>> Ready :)');
+/*
 const animeListFav = document.querySelector('.js-anime_list_fav');
 const animeList = document.querySelector('.js-anime_list');
 const searchInputTitle = document.querySelector('.js-search_input_title');
@@ -12,9 +13,9 @@ const defaultImage =
 
 let data = [];
 let dataFav = [];
-
+*/
 //Funcion para recoger datos de la APi
-function fetchItems() {
+/*function fetchItems() {
   fetch(`https://api.jikan.moe/v3/search/anime?q=${searchInputTitle.value}`)
     .then((response) => response.json())
     .then((dataFromApi) => {
@@ -23,10 +24,10 @@ function fetchItems() {
       renderAllItems();
     });
 }
+*/
 
-
-
-function renderAllItems() {
+// Funcion para mostrar la lista de series de anime
+/*function renderAllItems() {
   animeList.innerHTML = '';
   for (const eachAnime of data) {
     renderItem(eachAnime);
@@ -37,9 +38,9 @@ function renderAllItems() {
     eachAnimeArticle.addEventListener('click', handleAnimeFav);
   }
 }
+*/
 
-
-function handleAnimeFav(event) {
+/*function handleAnimeFav(event) {
   const existsFav = dataFav.find(
     (fav) => fav.title === event.currentTarget.dataset.title
   );
@@ -53,8 +54,8 @@ function handleAnimeFav(event) {
     alert('La serie de anime ya está en la lista de favoritos');
   }
 }
-
-function renderAllItemsFav() {
+*/
+/*function renderAllItemsFav() {
   animeListFav.innerHTML = '';
 
   for (const eachAnimeFav of dataFav) {
@@ -68,8 +69,8 @@ function renderItemFav(dataFav) {
   li.innerHTML = `<img class="" src="${dataFav.imageUrl}" alt="" placeholder=""><h3 class="card__title">${dataFav.title}</h3>`;
   animeListFav.appendChild(li);
 }
-
-// Funcion para mostrar la lista de series de anime
+*/
+/*
 function renderItem(data) {
   let imageUrl = data.image_url;
 
@@ -96,23 +97,23 @@ function renderItem(data) {
 
   animeList.appendChild(article);
 }
-
+/*
 function handleShowTitle(event) {
   event.preventDefault();
   fetchItems();
 }
-
-function handleClickReset() {
+*/
+/*function handleClickReset() {
   location.reload();
 }
-
-function handleClickResetAllFav() {
+*/
+/*function handleClickResetAllFav() {
   dataFav = [];
   localStorage.clear();
   location.reload();
 }
-
-function setInLocalStorage() {
+*/
+/*function setInLocalStorage() {
   localStorage.setItem('dataLocalStorageFav', JSON.stringify(dataFav));
 }
 
@@ -126,7 +127,7 @@ function getFromLocalStorage() {
   }
 }
 getFromLocalStorage();
-
-buttonSearch.addEventListener('click', handleShowTitle);
-buttonReset.addEventListener('click', handleClickReset);
-buttonResetFav.addEventListener('click', handleClickResetAllFav);
+*/
+/*buttonSearch.addEventListener('click', handleShowTitle);*/
+/*buttonReset.addEventListener('click', handleClickReset);*/
+/*buttonResetFav.addEventListener('click', handleClickResetAllFav);*/
