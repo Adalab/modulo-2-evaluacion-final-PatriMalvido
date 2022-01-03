@@ -173,4 +173,10 @@ li {
 .js-fav {
   border: 6px solid #2b86c5;
   color: #2b86c5;
+  background-image: linear-gradient(
+    360deg,
+    #3cff5c 0%,
+    #4ba095 50%,
+    #2b86c5 100%
+  );
 }

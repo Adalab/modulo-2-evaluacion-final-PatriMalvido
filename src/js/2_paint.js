@@ -9,10 +9,10 @@ function handleAnimeFav(event) {
 
   if (existsFav === undefined) {
     dataFav.push(event.currentTarget.dataset);
-    
+    event.currentTarget.classList.add('js-fav');
     setInLocalStorage();
     renderAllItemsFav();
-    
+
   } else {
     alert('La serie de anime ya está en la lista de favoritos');
   }
