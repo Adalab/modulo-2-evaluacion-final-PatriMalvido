@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 function handleAnimeFav(event) {
   const existsFav = dataFav.find(
     (fav) => fav.title === event.currentTarget.dataset.title
@@ -12,7 +10,6 @@ function handleAnimeFav(event) {
     event.currentTarget.classList.add('js-fav');
     setInLocalStorage();
     renderAllItemsFav();
-
   } else {
     alert('La serie de anime ya está en la lista de favoritos');
   }
@@ -29,7 +26,6 @@ function renderAllItems() {
     eachAnimeArticle.addEventListener('click', handleAnimeFav);
   }
 }
-
 
 function renderItem(data) {
   let imageUrl = data.image_url;

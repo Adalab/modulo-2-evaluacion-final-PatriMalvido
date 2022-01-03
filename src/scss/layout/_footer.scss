@@ -1,6 +1,6 @@
 .page__footer{
     display: flex;
-    flex-direction: column;
+ justify-content: center; 
     align-items: center;
     padding: 20px;
     background-color: #3cff5c;
@@ -8,4 +8,5 @@
 }
 .footer__copy {
   font-weight: bold;
+  
 }
