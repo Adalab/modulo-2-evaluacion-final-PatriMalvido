@@ -4,6 +4,7 @@ El ejercicio consiste en desarrollar una aplicación web de búsqueda de series 
 
 Para probarlo haz click  [aquí](http://beta.adalab.es/modulo-2-evaluacion-final-PatriMalvido/) y verás el **PatriAnime** en funcionamiento.  
 
+![image](src/images/imagemockup.png)
 -------------------------------------------
 
 ## Descripción y pasos del ejercicio :spiral_notepad:
@@ -38,7 +39,8 @@ Para el planteamiento del ejercicio realicé un diagrama de flujo para tener com
 ![imagen](src/images/DiagramaEvaluacion.png)
 
 ----------------------------------------------------
-## Construido con: :gear: :hammer_and_wrench:
+## Construido con: ![imagen](src/images/icongithub.png) ![imagen](src/images/iconhtml5.png) ![imagen](src/images/iconjavascript.png) ![imagen](src/images/iconnodejs.png) ![imagen](src/images/iconsass.png)
+
 
 He usado el Starter Kit de Adalab, creado en Node y Gulp, que es una plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas. 
 Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
