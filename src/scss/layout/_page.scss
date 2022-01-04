@@ -66,13 +66,14 @@ body {
 .containers {
   display: flex;
   width: 100%;
+  padding-bottom: 80px;
   justify-content: left;
+  background-color: #e6f4fd;
 }
 
 .container__cards {
   display: flex;
   justify-content: center;
-
   order: 2;
 }
 
