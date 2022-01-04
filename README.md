@@ -1,7 +1,8 @@
 # Módulo 2: Ejercicio de Evaluación final 
 
 El ejercicio consiste en desarrollar una aplicación web de búsqueda de series de anime, que nos permite marcar las series como favoritas y guardarlas en el local storage.
-![imagen](src/images/image_telename.png) Para probarlo haz click  [aquí](http://beta.adalab.es/modulo-2-evaluacion-final-PatriMalvido/) y verás el **PatriAnime** en funcionamiento.  
+![imagen](src/images/image_telename.png) 
+Para probarlo haz click  [aquí](http://beta.adalab.es/modulo-2-evaluacion-final-PatriMalvido/) y verás el **PatriAnime** en funcionamiento.  
 
 -------------------------------------------
 
