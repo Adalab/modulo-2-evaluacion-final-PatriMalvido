@@ -5,54 +5,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PatriAnime</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-  crossorigin="anonymous"
-/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    
   <link rel="stylesheet" href="./assets/css/main.css" />
   <link rel="icon" href="./assets/images/image_tele_icon.png" />
 </head>
 
 <body>
- 
-    <header class="page__header">
-        <img src='./assets/images/image_tele.png' class='image__header' alt="">
-        <h1 class="header__title">Buscador de Series de Anime</h1>
-    </header>
-    <main class="page__main">
 
-        <form class='form'>
-            <input class="form__input js-search_input_title" type="text" name="search" id="search"
-                placeholder="Escribe aqui...">
-            <input class='form__button-search js-button_search' type="button" value='Buscar'>
-            <input type="button" value='Reset' class="form__button-reset js-button_reset">
+  <header class="page__header">
+      <img src='./assets/images/image_tele.png' class='image__header' alt="">
+      <h1 class="header__title">Buscador de Series de Anime</h1>
+  </header>
+  <main class="page__main">
 
-        </form>
-        <div class="containers">
-            <div class='container__cards'>
-                <section class="cards__anime js-anime_list">
-                </section>
-            </div>
-            <div class='fav__container'>
-                <section class="fav__section ">
-                    <h3 class="fav__section-title">Series favoritas</h3>
-                    <ul class=" js-anime_list_fav"> </ul>
-                    <input type="button" value='Reset' class='js-button_reset_fav fav__section-reset'>
-                </section>
-                <ul class=" js-main_list"></ul>
-            </div>
-        </div>
-    </main>
-    <footer class="page__footer">
-        <small class="footer__copy">&copy; Patri-Anime </small>
-        <img src="assets/images/image_tele_icon.png" alt="">
-    </footer>
+      <form class='form'>
+          <input class="form__input js-search_input_title" type="text" name="search" id="search"
+              placeholder="Escribe aqui...">
+          <input class='form__button-search js-button_search' type="button" value='Buscar'>
+          <input type="button" value='Reset' class="form__button-reset js-button_reset">
+
+      </form>
+      <div class="containers">
+          <div class='container__cards'>
+              <section class="cards__anime js-anime_list">
+              </section>
+          </div>
+          <div class='fav__container'>
+              <section class="fav__section ">
+                  <h3 class="fav__section-title">Series favoritas</h3>
+                  <ul class=" js-anime_list_fav"> </ul>
+                  <input type="button" value='Reset' class='js-button_reset_fav fav__section-reset'>
+              </section>
+              <ul class=" js-main_list"></ul>
+          </div>
+      </div>
+  </main>
+  <footer class="page__footer">
+      <small class="footer__copy">&copy; PatriAnime </small>
+      <img src="assets/images/image_tele_icon.png" alt="">
+  </footer>
 
   <script src="./assets/js/main.js"></script>
 </body>
