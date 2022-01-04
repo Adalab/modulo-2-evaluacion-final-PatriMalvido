@@ -1,68 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PatriAnime</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous"
+/>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/image_tele_icon.png" />
+</head>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+<body>
+ 
+    <header class="page__header">
+        <img src='./assets/images/image_tele.png' class='image__header' alt="">
+        <h1 class="header__title">Buscador de Series de Anime</h1>
+    </header>
+    <main class="page__main">
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+        <form class='form'>
+            <input class="form__input js-search_input_title" type="text" name="search" id="search"
+                placeholder="Escribe aqui...">
+            <input class='form__button-search js-button_search' type="button" value='Buscar'>
+            <input type="button" value='Reset' class="form__button-reset js-button_reset">
 
-          </li>
-        </ul>
-      </main>
+        </form>
+        <div class="containers">
+            <div class='container__cards'>
+                <section class="cards__anime js-anime_list">
+                </section>
+            </div>
+            <div class='fav__container'>
+                <section class="fav__section ">
+                    <h3 class="fav__section-title">Series favoritas</h3>
+                    <ul class=" js-anime_list_fav"> </ul>
+                    <input type="button" value='Reset' class='js-button_reset_fav fav__section-reset'>
+                </section>
+                <ul class=" js-main_list"></ul>
+            </div>
+        </div>
+    </main>
+    <footer class="page__footer">
+        <small class="footer__copy">&copy; Patri-Anime </small>
+        <img src="assets/images/image_tele_icon.png" alt="">
+    </footer>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+  <script src="./assets/js/main.js"></script>
+</body>
 
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
 </html>
