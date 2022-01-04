@@ -1,10 +1,16 @@
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 100vh;
   font-family: 'Patrick Hand SC', cursive;
 }
 
 .page__main {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   background-color: #e6f4fd;
 }
 
@@ -25,7 +31,7 @@ body {
     margin-left: 10px;
     padding: 0 10px;
     background-color: #49ce5f;
-    width: 100px;
+    width: 80px;
     height: 30px;
     color: black;
     border-radius: 5px;
@@ -36,19 +42,27 @@ body {
     background: #4ba095;
     background: linear-gradient(0deg, #4ba095 0%, #2b86c5 100%);
     border: none;
+    @include tablet {
+      width: 100px;
+      height: 30px;
+    }
   }
 
   &__button-search:hover {
     background: #3cff5c;
     background: linear-gradient(0deg, #3cff5c 0%, #4ba095 100%);
     font-size: 18px;
+    @include tablet {
+      width: 100px;
+      height: 30px;
+    }
   }
 
   &__button-reset {
     margin-left: 10px;
     padding: 0 10px;
     background-color: #49ce5f;
-    width: 100px;
+    width: 80px;
     height: 30px;
     color: black;
     border-radius: 5px;
@@ -59,6 +73,10 @@ body {
     background: #4ba095;
     background: linear-gradient(0deg, #4ba095 0%, #2b86c5 100%);
     border: none;
+    @include tablet {
+      width: 100px;
+      height: 30px;
+    }
   }
 
   &__button-reset:hover {
@@ -89,21 +107,33 @@ body {
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  margin: 30px 10px 10px 10px;
+  margin: 15px 10px 10px 40px;
   border-radius: 10px;
+  @include tablet {
+    margin: 30px 10px 10px 10px;
+  }
 }
 .js-anime {
-  width: 200px;
-  height: 400px;
-
-  margin: 0px 10px 10px 10px;
+  width: 150px;
+  height: 250px;
+  margin: 0px 5px 5px 5px;
   text-align: center;
   border-radius: 10px;
-  border: 6px solid #4ba095;
-  padding-bottom: 20px;
+  border: 4px solid #4ba095;
+  padding-bottom: 10px;
+  @include tablet {
+    width: 200px;
+    height: 400px;
+    margin: 0px 10px 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 6px solid #4ba095;
+    padding-bottom: 20px;
+  }
 }
-.fav__section {
 
+.fav__section {
+  /*
   min-width: 300px;
   max-width: 300px;
   height: auto;
@@ -114,15 +144,35 @@ body {
   padding: 20px 10px 20px 10px;
   font-size: 24px;
   border-radius: 10px;
+*/
+  width: 150px;
+  border: 4px solid #2b86c5;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  font-size: 12px;
+  border-radius: 10px;
+  margin-top: 15px;
+  @include tablet {
+    border: 6px solid #2b86c5;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 30px;
+    width: 400px;
+  }
 
   &-title {
-    font-size: 40px;
+    font-size: 25px;
+    @include tablet {
+      font-size: 40px;
+    }
   }
   &-reset {
     margin-left: 10px;
     padding: 0 10px;
     background-color: #49ce5f;
-    width: 100px;
+    width: 80px;
     height: 30px;
     color: black;
     border-radius: 5px;
@@ -133,11 +183,19 @@ body {
     background: #4ba095;
     background: linear-gradient(0deg, #4ba095 0%, #2b86c5 100%);
     border: none;
+    @include tablet {
+      width: 100px;
+      height: 30px;
+    }
   }
   &-reset:hover {
     background: #3cff5c;
     background: linear-gradient(0deg, #3cff5c 0%, #4ba095 100%);
     font-size: 18px;
+    @include tablet {
+      width: 100px;
+      height: 30px;
+    }
   }
 }
 li {
@@ -147,28 +205,53 @@ li {
 .js-card__title {
   width: 100%;
   text-align: center;
-  padding-top: 10px;
-  font-size: 24px;
+  font-size: 14px;
+  @include tablet {
+    font-size: 24px;
+    padding-top: 10px;
+  }
 }
 
 .js-image {
-  width: 180px;
-  height: 270px;
-  padding-top: 30px;
+  width: 100px;
+  height: 200px;
+  padding-top: 15px;
   text-align: center;
+  @include tablet {
+    width: 180px;
+    height: 270px;
+    padding-top: 30px;
+    text-align: center;
+  }
 }
 
 .js-favItem {
+  width: 120px;
+  height: 230px;
+  margin: 0px 5px 5px 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: 4px solid #2b86c5;
+  padding-bottom: 10px;
+  color: black;
   background-image: linear-gradient(
     360deg,
     #3cff5c 0%,
     #4ba095 50%,
     #2b86c5 100%
   );
-  padding: 20px;
-  color: black;
-  border-radius: 10px;
-  margin-top: 10px;
+  @include tablet {
+    width: 200px;
+    height: 400px;
+    margin: 0px 10px 10px 100px;
+    text-align: center;
+    border-radius: 10px;
+    border: 6px solid #2b86c5;
+    padding-bottom: 20px;
+  }
+
+  
+
 }
 .js-fav {
   border: 6px solid #2b86c5;
@@ -179,4 +262,24 @@ li {
     #4ba095 50%,
     #2b86c5 100%
   );
+}
+.js-image-fav {
+  width: 100px;
+  height: 200px;
+  padding-top: 15px;
+  text-align: center;
+  @include tablet {
+    width: 180px;
+    height: 270px;
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+
+.card__title{
+
+  font-size: 14px;
+  @include tablet {
+    font-size: 24px;
+  }
 }

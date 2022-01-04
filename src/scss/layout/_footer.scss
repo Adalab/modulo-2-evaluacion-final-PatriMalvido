@@ -1,12 +1,18 @@
-.page__footer{
-    display: flex;
- justify-content: center; 
-    align-items: center;
-    padding: 20px;
-    background-color: #3cff5c;
-  background-image: linear-gradient(225deg, #3cff5c 0%, #4ba095 50%, #2B86C5 100%);
+.page__footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  background-color: #3cff5c;
+  background-image: linear-gradient(
+    225deg,
+    #3cff5c 0%,
+    #4ba095 50%,
+    #2b86c5 100%
+  );
 }
 .footer__copy {
   font-weight: bold;
-  
 }
