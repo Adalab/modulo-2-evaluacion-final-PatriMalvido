@@ -1,7 +1,7 @@
 //VARIABLES GLOBALES//
 
 'use strict';
-console.log('>> Ready :)');
+
 const animeListFav = document.querySelector('.js-anime_list_fav');
 const animeList = document.querySelector('.js-anime_list');
 const searchInputTitle = document.querySelector('.js-search_input_title');

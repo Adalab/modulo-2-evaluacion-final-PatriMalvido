@@ -6,7 +6,6 @@ function fetchItems() {
     .then((response) => response.json())
     .then((dataFromApi) => {
       data = dataFromApi.results;
-      console.log(defaultImage);
 
       renderAllItems();
     });
