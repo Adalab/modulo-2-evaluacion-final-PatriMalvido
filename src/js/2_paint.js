@@ -15,6 +15,9 @@ function handleAnimeFav(event) {
   }
 }
 
+
+
+
 function renderAllItems() {
   animeList.innerHTML = '';
   for (const eachAnime of data) {

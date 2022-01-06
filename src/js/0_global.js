@@ -1,6 +1,9 @@
 //VARIABLES GLOBALES//
 
 'use strict';
+const buttonIconResetFav = document.querySelector('.js-reset_Icon_Fav');
+
+
 
 const animeListFav = document.querySelector('.js-anime_list_fav');
 const animeList = document.querySelector('.js-anime_list');

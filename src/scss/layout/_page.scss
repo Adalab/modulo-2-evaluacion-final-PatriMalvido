@@ -60,7 +60,7 @@ body {
   }
 
   &__button-reset:hover {
-   @include buttonHover;
+    @include buttonHover;
   }
 }
 .containers {
@@ -214,14 +214,11 @@ li {
     border: 6px solid #2b86c5;
     padding-bottom: 20px;
   }
-
-  
-
 }
 .js-fav {
   border: 6px solid #2b86c5;
   color: white;
-@include backColor;
+  @include backColor;
 }
 .js-image-fav {
   width: 100px;
@@ -236,16 +233,16 @@ li {
   }
 }
 
-.card__title{
-
+.card__title {
   font-size: 14px;
   @include tablet {
     font-size: 24px;
   }
 }
 
-.reset-icon-fav {
-  border: 1px solid red;
+.fa-times {
+  color: red;
   border-radius: 50px;
+
   cursor: pointer;
 }
