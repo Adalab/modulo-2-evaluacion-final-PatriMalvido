@@ -1,5 +1,10 @@
 'use strict';
 
+
+
+
+
+
 function handleAnimeFav(event) {
   const existsFav = dataFav.find(
     (fav) => fav.title === event.currentTarget.dataset.title
@@ -39,8 +44,21 @@ function renderItem(data) {
   article.classList.add('js-article');
   article.dataset.title = data.title;
   article.dataset.imageUrl = imageUrl;
-  article.innerHTML = `<img class="js-image" src="${imageUrl}" alt="" placeholder="">
-    <h3 class="js-card__title">${data.title}</h3>`;
+  article.dataset.airing = data.airing;
+  let html = `<img class="js-image" src="${imageUrl}" alt="" placeholder="">`;
+  html += `<h3 class="js-card__title">${data.title}</h3>`;
+
+
+  if (data.airing === true){
+    html+=`<h3> <a href=${data.url}>Mas detalles </h3>`;
+  
+  }else {
+    html+=`<h3>No se está emitiendo</h3>`;
+  }
+
+
+
+  article.innerHTML = html;
 
   const isFav = dataFav.find((fav) => fav.title === data.title);
 
